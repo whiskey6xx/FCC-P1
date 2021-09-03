@@ -1,0 +1,92 @@
+body {
+    background-color: #2f2f2f;
+    color: #edd;
+    font-family: sans-serif;
+  }
+  
+  #header {
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  #reference {
+    color: #aaf;
+    text-decoration: none;
+  }
+  
+  /* Base Page Positioning*/
+  #navbar {
+    position:fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: #edd;
+  }
+  
+  #navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  #navbar li {
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+  }
+  
+  #navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #eed;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #navbar a:hover {
+    color: #aaf;
+  }
+  
+  
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+  }
+  
+  /* Responsive Design Media Queries */
+  @media only screen and (max-width: 815px) {
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+    
+    #navbar {
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+    
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
+  
+  
+  
+  
+  
